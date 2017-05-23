@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+	
+/*MODIFICAR EL DOM*/
+
+//parent()
+$('div:visible').parent(); // seleccionar el elemento contenedor, a un div visible
+//parents()
+$( "li.item-a" ).parents().css( "background-color", "red" ); //Obtener los ancestros de cada elemento en el conjunto actual de elementos coincidentes, opcionalmente filtrados por un selector.
+$(document).ready(function(){
+    $("span").parents().css({"color": "red", "border": "2px solid red"});
+});
+//parentsUntil()
+$(document).ready(function(){
+    $("span").parentsUntil("div").css({"color": "red", "border": "2px solid red"});
+});
+//children()
+$('#myList').children(); // seleccionar todos los elementos,hijos de #myList
+//find()
+//siblings()
+$('li.selected').siblings(); // seleccionar todos los items hermanos del elemento <li>
+//next()
+$('h1').next('p');  // seleccionar el inmediato y próximo, elemento <p> con respecto a H1
+//nextAll()
+$(document).ready(function(){
+    $("li.start").nextAll().css({"color": "red", "border": "2px solid red"});
+}); //Devolver todos los siguientes elementos relacionados de cada <li> elemento con el nombre de la clase "start" :
+//nextUntil()
+$(document).ready(function(){
+    $("li.start").nextUntil("li.stop").css({"color": "red", "border": "2px solid red"});
+});//Devolver todos los elementos de hermanos entre dos <li> elementos con nombre de clase "start" y "stop"
+//prev()
+$(document).ready(function(){
+    $("li.start").prev().css({"color": "red", "border": "2px solid red"});
+}); //Devuelve el elemento secundario anterior de cada <li> elemento con el nombre de la clase "start".
+//prevAll()
+
+//prevUntil()
+$(document).ready(function(){
+    $("li.start").prevUntil("li.stop").css({"color": "red", "border": "2px solid red"});
+}); //Devolver todos los elementos de hermanos entre dos <li> elementos con nombre de clase "start" y "stop"
+//first()
+$(document).ready(function()){
+$( "li" ).first().css( "background-color", "red" });//Seleccione el primer elemento <p>:
+//last()
+$("p").last(); //Seleccione el último <p> elemento dentro de la última <div> elemento:
+//eq()
+$("p").eq(1).css("background-color", "yellow"); //Seleccione el segundo <p> elemento (índice de número 1):
+//filter() 
+$("p").filter(".intro"); //Devolver todos los elementos <P> con el nombre de clase "intro"
+
+//not()
+$("p").not(".intro"); //Devolver todos los <p> elementos que no tienen el nombre de la clase "intro"
+
+/* Ajax */
+
+//load()
+//Tipo: PlainObject o cuerdas
+ var a = [];
+  var d = document;
+  var o = {};
+ 
+  typeof a; // object
+  typeof d; // object
+  typeof o; // object
+ 
+  jQuery.isPlainObject( a ); // false
+  jQuery.isPlainObject( d ); // false
+  jQuery.isPlainObject( o ); // true
+//funcion
+  $( document ).ready(function() {});
+$( "a" ).click(function() {});
+$.ajax({
+  url: "someurl.php",
+  success: function() {}
+});
+
+//$.get()
+ 
+//$.post()
+
+
+</script>
+	<title></title>
+</head>
+<body>
+
+</body>
+</html>

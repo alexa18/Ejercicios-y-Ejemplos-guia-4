@@ -1,0 +1,57 @@
+<!doctype html>
+<html >
+<head>
+  <meta charset="utf-8">
+   <title>jQuery UI Accordion </title>
+   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+ $(document).ready(function() {
+    $( "#accordion").accordion();
+  } );
+  </script>
+</head>
+<body>
+<div id="accordion">
+  <h3>¿Que es JQuery?</h3>
+  <div>
+    <p>
+    jQuery es una biblioteca multiplataforma de JavaScript, creada inicialmente por John Resig,<br> que permite simplificar la manera de interactuar con los documentos HTML, manipular el árbol<br>DOM, manejar eventos, desarrollar animaciones y agregar interacción con la técnica AJAX a páginas web
+    </p>
+  </div>
+
+  <h3>Características</h3>
+  <div>
+    <ul>
+    <li>Interactividad y modificaciones del árbol DOM, incluyendo soporte para CSS 1-3 y un plugin básico de XPath.</li>
+    <li>Eventos.</li> 
+    <li>Manipulación de la hoja de estilos CSS.</li> 
+    <li>Efectos y animaciones.</li> 
+    <li>Animaciones personalizadas.</li> 
+    <li> AJAX.</li>
+    <li>Soporta extensiones.</li>
+    </ul>
+  </div>
+
+  <h3>Uso</h3>
+  <div>
+    <p>
+   jQuery consiste en un único fichero JavaScript que contiene las funcionalidades comunes de DOM, eventos, efectos y AJAX.<br>
+
+   La característica principal de la biblioteca es que permite cambiar el contenido de una página web sin necesidad de recargarla, mediante la manipulación del árbol DOM y peticiones AJAX. Para ello utiliza las funciones $() o jQuery().
+    </p>
+  </div>
+
+  <h3>Inicio jQuery</h3>
+  <div>
+   Comúnmente antes de realizar cualquier acción en el documento con jQuery(), debemos percatarnos de que el documento esté listo. Para ello usamos $(document).ready();, de esta forma:
+
+    $(document).ready(function() {
+   //Aquí van todas las acciones del documento.
+    });
+  </div>
+</div>
+ 
+</body>
+</html>

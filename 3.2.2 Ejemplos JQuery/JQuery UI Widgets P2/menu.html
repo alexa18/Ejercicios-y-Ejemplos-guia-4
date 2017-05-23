@@ -1,0 +1,57 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>jQuery UI Menu </title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+    $(document).ready(function() {
+    $( "#menu" ).menu();
+  } );
+  </script>
+  <style>
+  .ui-menu { width: 150px; 
+
+    border-radius: 5px;}
+
+  </style>
+</head>
+<body>
+ 
+<ul id="menu">
+  <li class="menu2"><div>Lenguaje</div></li>
+  <li><div>JavaScript</div></li>
+  <li><div>jQuery</div></li>
+  <li><div>Html</div>
+    <ul>
+      <li class="menu2"><div>Navegador</div></li>
+      <li><div>Google Chorme</div></li>
+      <li><div>Firefox</div></li>
+    </ul>
+  </li>
+  <li><div>Otro</div></li>
+  <li><div>No admitido</div></li>
+    <ul>
+      <li><div>jQuery</div>
+        <ul>
+          <li><div>JavaScript</div></li>
+          <li><div>Css</div></li>
+        </ul>
+      </li>
+      <li><div>Tipos</div>
+        <ul>
+          <li><div>1</div></li>
+          <li><div>2</div></li>
+          <li><div>3</div></li>
+        </ul>
+      </li>
+      <li><div>6</div></li>
+    </ul>
+  
+  <li class="menu2"><div>Especial</div></li>
+</ul>
+ 
+ 
+</body>
+</html>
